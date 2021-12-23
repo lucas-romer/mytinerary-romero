@@ -46,7 +46,7 @@ function Itinerary(props) {
 
               <div className="div">
                 <div className="minidiv">
-                  <span onClick={() => handleLike(itinerary._id)}> {liked ? "💵" : "💚"}  </span>
+                  <span onClick={() => handleLike(itinerary._id)}> {liked ? "♡" : "❤️"}  </span>
                   <div>Likes: {itinerary.like}</div>
                 </div>
                 <div className="minidiv">

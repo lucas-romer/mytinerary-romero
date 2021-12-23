@@ -16,7 +16,6 @@ const authAction = {
                    icon: "👌"
                 }) 
                 localStorage.setItem("token", user.data.response.token)
-                console.log(user)
                 dispatch({type: "NEW_USER", payload:user.data.response.newUser})
                 }else{
                     toast.error(user.data.response)

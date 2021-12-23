@@ -17,7 +17,6 @@ function SignInFront(props) {
 
   const handleSumit = (e) => {
     e.preventDefault();
-    console.log(password.current.value);
     props.signIn(email.current.value, password.current.value);
     email.current.value = "";
     password.current.value = "";

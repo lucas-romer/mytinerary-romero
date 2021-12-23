@@ -13,12 +13,9 @@ function Itinerary(props) {
   const handleClick = (id) => {
     setDisplay(!display)
     props.getActivity(id, props.activities)
-    // props.activities && console.log(props.activities)
   };
 
   const [display, setDisplay] = useState(false)
-
-  console.log(props.user)
   const [liked, setLiked] = useState("")
   const [likeQuantity, setlikeQuantity] = useState("")
 

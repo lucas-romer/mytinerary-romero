@@ -2,14 +2,12 @@ import axios from 'axios';
 
 const citiesAction = {
     getCities: () => {
-        console.log("estoy fuera de la función asincrona")
         return async (dispatch, getState) => {
           let response = await axios.get("http://localhost:4000/api/cities")
           dispatch({
             type: "GET_ALL_CITIES",
             payload: response.data.response,
           })
-          console.log("estoy en el mapDispatchToProps")
         }
       },
       filterCities: (allCities, searchCity) => {
